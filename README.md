@@ -25,7 +25,7 @@ will generate a random number from 0 to 4, after which you can print different p
 
 6.Write a function called `almostAddition` that takes two Int arguments. The first argument should require an argument label. The function should add the two arguments together, subtract 2, then print the result. Call the function and observe the printout.
 
-7.Write a function called `multiply` that takes two Double arguments. The function should multiply the two arguments and print the result. The first argument should require a label, and the second argument should have an external label, by, that differs from the internal label. Call the function and observe the printout.
+7.Write a function called `multiply` that takes two Double arguments. The function should multiply the two arguments and print the result. Call the function and observe the printout.
 
 #### In many cases you want to provide input to a function. For example, the progress function you wrote above in the Functioning App exercise might be located in an area of your project that doesn't have access to the value of steps and goal. In that case, whenever you called the function, you would need to provide it with the number of steps that have been taken and the goal for the day so it can print the correct progress statement.
 
