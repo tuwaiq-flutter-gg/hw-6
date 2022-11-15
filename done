@@ -1,0 +1,213 @@
+
+import 'dart:math';
+import 'dart:io';
+
+void main(){
+
+
+introduceMyself(){
+  print("My name is Nawaf and i am 22 years of age ");
+}
+
+
+
+
+magicEightBall(){
+
+  Random random =  Random();
+var randomNumber = random.nextInt(5);
+
+if(randomNumber==0){
+  print("this is number zero");
+}else if(randomNumber==1){
+
+  print("this is number one");
+
+}else if(randomNumber==2){
+
+  print("this is number two");
+
+}else if(randomNumber==3){
+
+  print("this is number three");
+
+}else {
+
+  print("this is number four");
+
+}
+
+}
+
+
+
+incrementSteps() {
+  var steps = 1500;
+  print("Currently steps $steps");
+  if (steps < 5000) {
+    steps++;
+    print("Currently steps $steps");
+  }
+}
+
+
+var goal;
+ progressUpdate() {
+   goal = 10;
+   if (steps < goal * 0.1) {
+     print("You're almost halfway there!");
+   } else if (steps < goal * 0.5) {
+     print("You're over halfway there!");
+   } else if (steps < goal * 0.9) {
+     print("You're almost there!");
+   }
+ }
+
+introduction(String name, String home, int age) {
+  print("${name}, ${age}, is from ${home}");
+}
+
+almostAddition(int s1, int s2) {
+  var result = s1 + s2 - 2;
+  print(result);
+}
+
+multiply(double s11, double s22) {
+  print(s11 * s22);
+
+
+calculateBMI({double? weight, int? height}) {
+  var body = weight! / pow(height! / 100, 2);
+  print("body mass is $body");
+  return body;
+}
+
+
+pacing(
+    {double? currentDistance,
+    double? totalDistance,
+    double? currentTime,
+    double? goalTime}) {
+  double currentPace = currentDistance! / currentTime!;
+  double goalPace = totalDistance! / goalTime!;
+    
+
+if (currentPace < goalPace) {
+    print("You've got to push it just a bit harder!");
+  } else {
+    print("Keep it up!");
+  }
+
+
+    }
+
+greeting(String name) {
+  print("Hi, $name! How are you?");
+}
+
+
+nt AddandMultiply(int x, int y) {
+  return (x * y) + 2;
+}
+
+
+int maxint(int x, int y) {
+  if (x > y) {
+    return x;
+  } else if (y > x) {
+    return y;
+  } else {
+    return 0; 
+  }
+}
+
+void addition(double x, double y) {
+  print(x + y);
+  print("No I cant use the return statment because the return will have a value of type other than void ")
+
+
+
+
+calculateBMI({double? weight, int? height}) {
+  var body = weight! / pow(height! / 100, 2);
+  print("body mass is $body");
+  return body;
+}
+
+
+
+    primeNum(int num) {
+  for (var i = 2; i <= (num ~/ 2); i++) {
+    if (num % i == 0) {
+      return "$num is not a prime number.";
+    }
+  }
+  return "$num is a prime number.";
+}
+
+
+
+  
+}
+
+
+
+for (var i = 0; i < list.length - 1; i++) {
+    for (var j = 0; j < (list.length - 1) - i; j++) {
+      if (list[j] < list[j + 1]) {
+        var temp = list[j];
+        list[j] = list[j + 1];
+        list[j + 1] = temp;
+        print(list);
+      }
+    }
+  }
+
+  return list;
+}
+
+
+
+dsInt(int? num) {
+  for (var i = 1; i <= num!; i++) {
+    for (var r = 1; r <= i; r++) {
+      stdout.write("$r ");
+    }
+    print("");
+  }
+}
+
+ouLet({String? letters}) {
+  int letter = 0;
+  for (var x in letters!.split("")) {
+    if (x.contains(new RegExp("^[a-zA-Z]+"))) {
+      letter++;
+    }
+  }
+  return letter;
+}
+
+isPassword(String pass) {
+  if ((pass.length >= 8)) {
+    if (pass.contains(new RegExp(r'[!@#$%^&*(),.?":{}|<>]'))) {
+      var count = 0;
+      for (var i in pass.split("")) {
+        if (i.contains(new RegExp(r'[0-9]'))) {
+          count++;
+        }
+      }
+
+      if (count > 1) {
+        return "valid";
+      }
+    }
+  }
+
+  return "invalid";
+}
+
+
+isPrime(int num) {
+  for (var i = 2; i <= (num ~/ 2); i++) if (num % i == 0) return false;
+  return true;
+}
