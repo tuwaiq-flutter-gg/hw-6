@@ -158,7 +158,7 @@ BMI({double? weight , double? height})
   print(weight! / (height! * height));
 }
 
-
+//16
 SleCommis (Double amout, Double rate  ) {}
 calener (int month, int year){ }
 squareRoot(doublenum){}
@@ -167,6 +167,24 @@ iseven(int num){}
 
 
 
+//17
 
 
 
+
+
+List<dynamic>?sorting(List<dynamic> lsitsor){
+int araylenth = lsitsor.length;
+for (int i = 0 ; i< araylenth -1 ; i++){
+  for (int j = 0; j < araylenth - i -1 ; j ++){
+    if (lsitsor[j]<lsitsor[j+1]){
+
+      dynamic checks = lsitsor[j];
+      lsitsor[j]= lsitsor[j + 1];
+      lsitsor[j +1]= checks;
+      
+    }
+  }
+}
+return lsitsor;
+}
