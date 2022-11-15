@@ -28,7 +28,7 @@ void main() {
   // decreaseInt(5);
   // prime(11);
   // NumofLetters("1he@@llo11");
-  // pass("djhfufh##^32");
+  // pass("DYUGDUQWD62525");
 }
 
 //Q1
@@ -156,19 +156,18 @@ double? square(double num) {}
 bool? even(int x) {}
 
 //Q17
-// List<int>? sortlist(List<int> li) {
-//   List<int> temp = [];
-//   for (int x = 0; x < li.length; x++) {
-//     var i = li[0];
-//     for (int j = 0; j < li.length; j++) {
-//       if (i > li[j]) {
-//         i = li[j];
-//       }
-//     }
-//     temp.add(i);
-//   }
-//   return temp;
-// }
+List<int> sortlist(List<int> li) {
+  for (int i = 0; i < li.length; i++) {
+    for (int j = 0; j < (li.length - 1) - i; j++) {
+      if (li[j] < li[j + 1]) {
+        int temp = li[j];
+        li[j] = li[j + 1];
+        li[j + 1] = temp;
+      }
+    }
+  }
+  return li;
+}
 
 //Q18
 decreaseInt(int x) {
@@ -206,9 +205,10 @@ pass(String pass) {
       c++;
     }
   }
-  if (c > 1) {
+  if (c < 2) {
     valid = false;
   }
+  print(c);
   print(valid);
 }
 
