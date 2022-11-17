@@ -266,7 +266,7 @@ CheckPassword({String? pass}){
     var i = 0 ;
     var digits = 0 ;
     while(i<pass.length){
-      if(pass[i].contains(new RegExp(r'[a-z]'))){
+      if(pass[i].contains(new RegExp(r'[0-9]'))){
         digits++;
       }
       i++;
